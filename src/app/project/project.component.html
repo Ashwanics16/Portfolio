@@ -1,0 +1,11 @@
+<div class="conatiner">
+    <h1 >Projects</h1>
+    <section *ngFor="let pro of project">
+        <h2>{{pro.title}}</h2>
+        <h3>Technologies:{{pro.technologies}}</h3>
+        <ul *ngFor="let desc of pro.description">
+               <li>{{desc}}</li>
+        </ul>
+
+    </section>
+</div>
